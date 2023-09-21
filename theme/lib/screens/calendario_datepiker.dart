@@ -5,24 +5,7 @@ import 'package:intl/intl.dart';
 import 'package:fl_components/theme/app_theme.dart';
 
 /// CalendarioDataPiker
-///
-/// Solo permite seleccionar datos dentro de la temporada actual,
-/// ? Se modifico para que sea del 1 de Enero del año en que se habre la temporada
-/// ? hasta 90 dias despues de la fecha de cierre
-///
-/// Recibe valores de:
-/// permitirDiasPosteriores: variable tipo bool
-///     true  = permite seleccionar cualquier dia de la temporada
-///     false = solo deja seleccionar hasta la fecha actual,
-///              si no tiene datos fechaMaximaSeleccion sera el dia actual.
-///
-/// permitirDiasAnteriores: variable tipo bool
-///     true = permite seleccionar cualquier dia de la temporada.
-///     false = solo deja seleccionar ha partir de la fechaMinimaSeleccion hasta el final de temporada
-///              si no tiene datos fechaMinimaSeleccion sera el dia actual.
-///
-///
-///
+
 
 class CalendarioDataPiker extends StatefulWidget {
   DateTime? fechaSeleccionada;
@@ -58,17 +41,7 @@ class _CalendarioDataPikerState extends State<CalendarioDataPiker> {
   Future<void> getDescripcionTemporada() async {
     //var descripcion = await Agtrc001Service().getDescripcionAndIdTemporada();
 
-    // Obtén las fechas como String del mapa
-    // String fechaInicioString = descripcion[0]['fechaInicio'].toString();
-    // String fechaFinString = descripcion[0]['fechaFin'].toString();
-
-    // Convierte las fechas a objetos DateTime
-    //fechaInicioTemporada = DateTime.parse(fechaInicioString);
-    //fechaFinTemporada = DateTime.parse(fechaFinString);
-
-    // Puedes imprimir las fechas en el formato que desees
-    //debugPrint('Fecha de inicio: $fechaInicioTemporada');
-    //debugPrint('Fecha de fin: $fechaFinTemporada');
+   
 
     // Actualiza la variable fechaFinTemporada en el estado del widget
     setState(() {});
