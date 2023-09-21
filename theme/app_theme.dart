@@ -47,7 +47,7 @@ class AppTheme {
             return const BorderSide(color: Colors.green, width: 1);
           }
           return const BorderSide(
-              color: secondary); // Cambia esto a tu color de borde deseado
+              color: secondary); 
         },
       ),
     );
